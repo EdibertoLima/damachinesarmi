@@ -174,11 +174,11 @@ public class Damahinesa extends JInternalFrame {
         int deltax = Math.abs(x - row);
         int deltay = Math.abs(y - col);
         if (x != row) {
-            if (deltay == 1) {
+            if (deltax == 1 &&  deltay==1) {
                 envia = true;
                 return true;
             }
-            if (deltay == 2) {
+            if (deltax == 2  &&  deltay==2) {
                 return true;
             }
         }
